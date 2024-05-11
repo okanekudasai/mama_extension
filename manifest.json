@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "소마 멘토링 매니저",
+  "description": "멘토링 스케쥴을 매니지먼트 해드릴게요",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "host_permissions": [
+    "https://www.swmaestro.org/sw/mypage/mentoLec/view.do"
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}
